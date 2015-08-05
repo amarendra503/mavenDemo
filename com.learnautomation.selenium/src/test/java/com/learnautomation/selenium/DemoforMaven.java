@@ -7,7 +7,6 @@ public class DemoforMaven {
 	public void testMaven() {
 		
 	System.out.println("Welcome to Maven World ");
-	System.out.println("Welcome to git world ");
 	
 	System.out.println("Welcome to Git Repository ");
 	
