@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29127" started-at="2015-08-07T10:07:41Z" finished-at="2015-08-07T10:08:10Z">
+  <suite name="Default suite" duration-ms="28688" started-at="2015-08-07T10:18:14Z" finished-at="2015-08-07T10:18:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29127" started-at="2015-08-07T10:07:41Z" finished-at="2015-08-07T10:08:10Z">
-      <class name="com.learnautomation.selenium.TestMaven">
-        <test-method status="PASS" signature="testMaven()[pri:0, instance:com.learnautomation.selenium.TestMaven@2a5a5e]" name="testMaven" duration-ms="37" started-at="2015-08-07T15:37:41Z" finished-at="2015-08-07T15:37:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMaven -->
-      </class> <!-- com.learnautomation.selenium.TestMaven -->
+    <test name="Default test" duration-ms="28688" started-at="2015-08-07T10:18:14Z" finished-at="2015-08-07T10:18:43Z">
       <class name="com.learnautomation.selenium.Login">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learnautomation.selenium.Login@128d900]" name="setUp" is-config="true" duration-ms="16172" started-at="2015-08-07T15:37:41Z" finished-at="2015-08-07T15:37:57Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learnautomation.selenium.Login@92fa70]" name="setUp" is-config="true" duration-ms="15533" started-at="2015-08-07T15:48:14Z" finished-at="2015-08-07T15:48:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.learnautomation.selenium.Login@128d900]" name="loginTest" duration-ms="11045" started-at="2015-08-07T15:37:57Z" finished-at="2015-08-07T15:38:08Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.learnautomation.selenium.Login@92fa70]" name="loginTest" duration-ms="11272" started-at="2015-08-07T15:48:29Z" finished-at="2015-08-07T15:48:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.selenium.Login@128d900]" name="tearDown" is-config="true" duration-ms="1830" started-at="2015-08-07T15:38:08Z" finished-at="2015-08-07T15:38:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.selenium.Login@92fa70]" name="tearDown" is-config="true" duration-ms="1846" started-at="2015-08-07T15:48:41Z" finished-at="2015-08-07T15:48:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.learnautomation.selenium.Login -->
-      <class name="com.learnautomation.selenium.DemoforMaven">
-        <test-method status="PASS" signature="testMaven()[pri:0, instance:com.learnautomation.selenium.DemoforMaven@1aec0d1]" name="testMaven" duration-ms="3" started-at="2015-08-07T15:37:41Z" finished-at="2015-08-07T15:37:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMaven -->
-      </class> <!-- com.learnautomation.selenium.DemoforMaven -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
