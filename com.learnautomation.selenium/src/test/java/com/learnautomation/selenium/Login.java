@@ -10,17 +10,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Login {
-FirefoxDriver wd;
-    
-    @BeforeMethod
+	FirefoxDriver wd;
+	@BeforeMethod
     public void setUp() throws Exception {
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
     
     @Test
-    public void  loginTest() {
-        wd.get("http://amarendra-pc/login.do");
+    public void VeryfiCusttest () {
+        wd.get("http://amarendra-pc/login.jsp");
         wd.findElement(By.name("username")).click();
         wd.findElement(By.name("username")).clear();
         wd.findElement(By.name("username")).sendKeys("admin");
@@ -29,7 +28,22 @@ FirefoxDriver wd;
         wd.findElement(By.name("pwd")).sendKeys("manager");
         wd.findElement(By.cssSelector("input[type=\"submit\"]")).click();
         wd.findElement(By.xpath("//div[@id='container']//a[.='Projects & Customers']")).click();
-        wd.findElement(By.linkText("ABCD123")).click();
+        wd.findElement(By.linkText("Amar PvtLtd")).click();
+        if (!wd.findElement(By.tagName("html")).getText().contains("Amar PvtLtd")) {
+            System.out.println("verifyTextPresent failed");
+        }
+        if (!wd.findElement(By.tagName("html")).getText().contains("Active")) {
+            System.out.println("verifyTextPresent failed");
+        }
+        wd.findElement(By.linkText("Users")).click();
+        wd.findElement(By.linkText("Das, Kamini (kamini)")).click();
+        if (!wd.findElement(By.tagName("html")).getText().contains("Kamini Das (kamini)")) {
+            System.out.println("verifyTextPresent failed");
+        }
+        if (!wd.findElement(By.tagName("html")).getText().contains("Enabled")) {
+            System.out.println("verifyTextPresent failed");
+        }
+        wd.findElement(By.cssSelector("input[type=\"submit\"]")).click();
         wd.findElement(By.cssSelector("img.logoutImg")).click();
     }
     
@@ -46,6 +60,7 @@ FirefoxDriver wd;
             return false;
         }
     }
+
 
 
 }
