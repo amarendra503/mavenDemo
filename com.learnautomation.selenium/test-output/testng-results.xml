@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44101" started-at="2015-08-07T10:39:10Z" finished-at="2015-08-07T10:39:54Z">
+  <suite name="Default suite" duration-ms="42925" started-at="2015-08-07T10:54:55Z" finished-at="2015-08-07T10:55:38Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="44101" started-at="2015-08-07T10:39:10Z" finished-at="2015-08-07T10:39:54Z">
-      <class name="com.learnautomation.selenium.TestMaven">
-        <test-method status="PASS" signature="testMaven()[pri:0, instance:com.learnautomation.selenium.TestMaven@1673d71]" name="testMaven" duration-ms="29" started-at="2015-08-07T16:09:10Z" finished-at="2015-08-07T16:09:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMaven -->
-      </class> <!-- com.learnautomation.selenium.TestMaven -->
+    <test name="Default test" duration-ms="42925" started-at="2015-08-07T10:54:55Z" finished-at="2015-08-07T10:55:38Z">
       <class name="com.learnautomation.selenium.Login">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learnautomation.selenium.Login@e7da60]" name="setUp" is-config="true" duration-ms="14497" started-at="2015-08-07T16:09:10Z" finished-at="2015-08-07T16:09:24Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learnautomation.selenium.Login@15bab52]" name="setUp" is-config="true" duration-ms="15645" started-at="2015-08-07T16:24:55Z" finished-at="2015-08-07T16:25:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VeryfiCusttest()[pri:0, instance:com.learnautomation.selenium.Login@e7da60]" name="VeryfiCusttest" duration-ms="27979" started-at="2015-08-07T16:09:24Z" finished-at="2015-08-07T16:09:52Z">
+        <test-method status="PASS" signature="VeryfiCusttest()[pri:0, instance:com.learnautomation.selenium.Login@15bab52]" name="VeryfiCusttest" duration-ms="25553" started-at="2015-08-07T16:25:11Z" finished-at="2015-08-07T16:25:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VeryfiCusttest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.selenium.Login@e7da60]" name="tearDown" is-config="true" duration-ms="1567" started-at="2015-08-07T16:09:52Z" finished-at="2015-08-07T16:09:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.selenium.Login@15bab52]" name="tearDown" is-config="true" duration-ms="1697" started-at="2015-08-07T16:25:36Z" finished-at="2015-08-07T16:25:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.learnautomation.selenium.Login -->
-      <class name="com.learnautomation.selenium.DemoforMaven">
-        <test-method status="PASS" signature="testMaven()[pri:0, instance:com.learnautomation.selenium.DemoforMaven@1f6c18]" name="testMaven" duration-ms="1" started-at="2015-08-07T16:09:10Z" finished-at="2015-08-07T16:09:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMaven -->
-      </class> <!-- com.learnautomation.selenium.DemoforMaven -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

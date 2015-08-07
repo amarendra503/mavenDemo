@@ -29,10 +29,10 @@ public class Login {
         wd.findElement(By.cssSelector("input[type=\"submit\"]")).click();
         wd.findElement(By.xpath("//div[@id='container']//a[.='Projects & Customers']")).click();
         wd.findElement(By.linkText("Amar PvtLtd")).click();
-        if (!wd.findElement(By.tagName("html")).getText().contains("Amar PvtLtd")) {
+        if (!wd.findElement(By.xpath("//div[@id='container']/form/table/tbody/tr[2]/td/table/tbody/tr[1]/td[2]/span")).getText().contains("Amar PvtLtd")) {
             System.out.println("verifyTextPresent failed");
         }
-        if (!wd.findElement(By.tagName("html")).getText().contains("Active")) {
+        if (!wd.findElement(By.xpath("//div[@id='container']/form/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/span")).getText().contains("Active")) {
             System.out.println("verifyTextPresent failed");
         }
         wd.findElement(By.linkText("Users")).click();
