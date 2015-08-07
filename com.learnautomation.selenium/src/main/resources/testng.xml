@@ -3,7 +3,9 @@
 <suite name="Suite" parallel="none">
   <test name="Test">
     <classes>
+      <class name="com.learnautomation.selenium.TestMaven"/>
       <class name="com.learnautomation.selenium.DemoforMaven"/>
+      <class name="com.learnautomation.selenium.Login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
