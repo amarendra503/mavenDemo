@@ -4,17 +4,23 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+
+
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+
+@Test
 public class IrctcTrain {
 	 
 	WebDriver driver;
@@ -28,7 +34,6 @@ public class IrctcTrain {
 		  driver=new FirefoxDriver();
 	     driver.get("https://www.irctc.co.in");
 	    }
-	  @Test
 	  public void test1(){
 		  
 		  Actions act=new Actions(driver);
@@ -38,8 +43,6 @@ public class IrctcTrain {
 		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); 
 		  
 		  Set<String> set=driver.getWindowHandles(); 
-			System.out.println(set.size()); 
-			
 			Iterator<String> it=set.iterator(); 
 			String parentId=it.next(); 
 			String childId=it.next(); 
@@ -48,9 +51,31 @@ public class IrctcTrain {
 			
 			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); 
 			
-			driver.findElement(By.xpath("//section[@id='mainpannelNewLook']/div/div/ul/li[2]/div/div/span/a")).click();
+			driver.findElement(By.xpath(".//*[@id='mainpannelNewLook']/div/div/ul/li[1]/div/div/span/a")).click();
 			
-			}
+			 Set<String> set1=driver.getWindowHandles();
+			Iterator<String>it1=set1.iterator(); 
+			String parentID = it1.next(); 
+			String childID =it1.next(); 
+			String child2=it1.next();
+			
+			
+			driver.switchTo().window(child2);
+			
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS); 
+			
+			Assert.assertEquals(driver.findElement(By.xpath(".//*[@id='newPack1']/span/h1")).isDisplayed(),true);
+			
+//          driver.findElement(By.xpath(".//*[@id='newPack1']/span/a")).click();
+			
+//			String Actualtext = driver.findElement(By.xpath(".//*[@id='newPack1']/span/h1")).getText();
+//			
+//			Assert.assertEquals("Onam Special Tourist Train Ex Trivandrum(Kochuveli)",Actualtext);
+//		  System.out.print("assertion_method Part executed");
+	
+			
+			
+	  }
 		  
 		  
 		  
