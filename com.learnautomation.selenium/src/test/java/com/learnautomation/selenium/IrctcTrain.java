@@ -38,29 +38,23 @@ public class IrctcTrain {
 		  
 		  Actions act=new Actions(driver);
 		  act.moveToElement(driver.findElement(By.xpath("//a[@id='irctc_tourism']"))).perform();
-		  driver.findElement(By.xpath("//div[@id='bluemenu']/ul/li[9]/ul/li[2]/a")).click();
+		  driver.findElement(By.xpath(".//*[@id='bluemenu']/ul/li[10]/ul/li[2]/a")).click();
 		  
 		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); 
 		  
-		  Set<String> set=driver.getWindowHandles(); 
-			Iterator<String> it=set.iterator(); 
-			String parentId=it.next(); 
-			String childId=it.next(); 
+		  String currChildWindow = getcurrChildWindow(driver);
+		  
 			
-			driver.switchTo().window(childId); 
+			
+			driver.switchTo().window(currChildWindow); 
 			
 			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); 
 			
 			driver.findElement(By.xpath(".//*[@id='mainpannelNewLook']/div/div/ul/li[1]/div/div/span/a")).click();
 			
-			 Set<String> set1=driver.getWindowHandles();
-			Iterator<String>it1=set1.iterator(); 
-			String parentID = it1.next(); 
-			String childID =it1.next(); 
-			String child2=it1.next();
+			currChildWindow = getcurrChildWindow(driver);
 			
-			
-			driver.switchTo().window(child2);
+			driver.switchTo().window(currChildWindow);
 			
 			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS); 
 			
@@ -77,7 +71,16 @@ public class IrctcTrain {
 			
 	  }
 		  
-		  
+	 public String getcurrChildWindow(WebDriver driver){
+		  Set<String> set=driver.getWindowHandles(); 
+			Iterator<String> it=set.iterator();
+			
+			String childId = "";
+			while(it.hasNext()){
+				childId=it.next(); 
+			}
+		return childId;
+	 }
 		  
 	  
 	  @AfterMethod
