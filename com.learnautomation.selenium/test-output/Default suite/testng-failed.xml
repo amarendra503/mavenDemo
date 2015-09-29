@@ -5,11 +5,11 @@
     <classes>
       <class name="com.learnautomation.selenium.IrctcTrain">
         <methods>
-          <include name="afterClass"/>
-          <include name="test1"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
           <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="test1"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.learnautomation.selenium.IrctcTrain -->
     </classes>

@@ -38,7 +38,7 @@ public class IrctcTrain {
 		  
 		  Actions act=new Actions(driver);
 		  act.moveToElement(driver.findElement(By.xpath("//a[@id='irctc_tourism']"))).perform();
-		  driver.findElement(By.xpath(".//*[@id='bluemenu']/ul/li[10]/ul/li[2]/a")).click();
+		  driver.findElement(By.xpath("//div[@id='bluemenu']/ul/li[9]/ul/li[2]/a")).click();
 		  
 		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); 
 		  
@@ -58,7 +58,7 @@ public class IrctcTrain {
 			
 			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS); 
 			
-			Assert.assertEquals(driver.findElement(By.xpath(".//*[@id='newPack1']/span/h1")).isDisplayed(),true);
+			Assert.assertEquals(driver.findElement(By.xpath(".//*[@id='headerCenNewLook']/div[3]/div[3]/ul/li/a")).isDisplayed(),true);
 			
 //          driver.findElement(By.xpath(".//*[@id='newPack1']/span/a")).click();
 			
