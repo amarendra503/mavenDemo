@@ -2,32 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50965" started-at="2015-09-29T13:17:52Z" finished-at="2015-09-29T13:18:42Z">
+  <suite name="Default suite" duration-ms="143" started-at="2015-10-10T06:31:49Z" finished-at="2015-10-10T06:31:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50965" started-at="2015-09-29T13:17:52Z" finished-at="2015-09-29T13:18:42Z">
-      <class name="com.learnautomation.selenium.IrctcTrain">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.learnautomation.selenium.IrctcTrain@5a99da]" name="beforeClass" is-config="true" duration-ms="15" started-at="2015-09-29T18:47:52Z" finished-at="2015-09-29T18:47:52Z">
+    <test name="Default test" duration-ms="143" started-at="2015-10-10T06:31:49Z" finished-at="2015-10-10T06:31:49Z">
+      <class name="com.learnautomation.selenium.DemoforMaven">
+        <test-method status="PASS" signature="testMaven()[pri:0, instance:com.learnautomation.selenium.DemoforMaven@107ec20]" name="testMaven" duration-ms="78" started-at="2015-10-10T12:01:49Z" finished-at="2015-10-10T12:01:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.learnautomation.selenium.IrctcTrain@5a99da]" name="beforeMethod" is-config="true" duration-ms="44554" started-at="2015-09-29T18:47:52Z" finished-at="2015-09-29T18:48:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.learnautomation.selenium.IrctcTrain@5a99da]" name="test1" duration-ms="6370" started-at="2015-09-29T18:48:36Z" finished-at="2015-09-29T18:48:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.learnautomation.selenium.IrctcTrain@5a99da]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-09-29T18:48:42Z" finished-at="2015-09-29T18:48:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.learnautomation.selenium.IrctcTrain@5a99da]" name="afterClass" is-config="true" duration-ms="0" started-at="2015-09-29T18:48:42Z" finished-at="2015-09-29T18:48:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.learnautomation.selenium.IrctcTrain -->
+        </test-method> <!-- testMaven -->
+      </class> <!-- com.learnautomation.selenium.DemoforMaven -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
